@@ -1,0 +1,723 @@
+<html dir="ltr" lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="">
+    <title>Website</title>
+  
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <link href="../assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader" style="display: none;">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="mini-sidebar" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full" class="mini-sidebar">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand">
+                        <!-- Logo icon -->
+                        <a href="index.php">
+                            <b class="logo-icon">
+                                <!-- Dark Logo icon -->
+                               
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text -->
+                            <span class="logo-text">
+                                <!-- dark Logo text -->
+                                <img src="https://crsgov.click//assets/logo.png" alt="homepage" class="dark-logo" height="60px" width="190px">
+                                <!-- Light Logo text -->
+                                <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage">
+                            </span>
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ========================================as====================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+                        <!-- Notification -->
+                       
+                        <!-- End Notification -->
+                        <!-- ============================================================== -->
+                        <!-- create new -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings svg-icon"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <div class="customize-input">
+                                    <select class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                        <option selected="">EN</option>
+                                        <option value="1">AB</option>
+                                        <option value="2">AK</option>
+                                        <option value="3">BE</option>
+                                    </select>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <form>
+                                    <div class="customize-input">
+                                      
+                                       
+                                    </div>
+                                </form>
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="https://crsgov.click/../assets/images/users/d1.jpg" alt="user" class="rounded-circle" width="40">
+                                <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span class="text-dark">Rahul ray</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down svg-icon"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                                <a class="dropdown-item" href="viewprofile.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user svg-icon mr-2 ml-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                    My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card svg-icon mr-2 ml-1"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                                    My Balance</a>
+                               
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="editprofile.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings svg-icon mr-2 ml-1"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                    Edit Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="logout.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power svg-icon mr-2 ml-1"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+                                    Logout</a>
+                               
+                        </div></li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar ps-container ps-theme-default ps-active-y" data-sidebarbg="skin6" data-ps-id="0c68563b-5b3e-69e8-b3ab-85d9f8c6178c">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav" class="in">
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.php" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home feather-icon"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span class="hide-menu">Dashboard</span></a></li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Payments </span></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link" href="wallet.php" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag feather-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="hide-menu">Wallet Recharge
+                                </span></a>
+
+                        </li>
+                                                
+                        
+                                    
+                       <li class="list-divider"></li>
+                                                
+
+                     
+                        
+                       
+                        
+                     
+                        
+                       
+                        
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu"> Services </span></li>
+
+                        
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text feather-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><span class="hide-menu">Birth Cerificate </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+
+                                <li class="sidebar-item"><a href="birthmanual.php" class="sidebar-link"><span class="hide-menu">Birth Application
+                                        </span></a>
+                                </li>
+                                
+                                <li class="sidebar-item"><a href="birthmanuallist.php" class="sidebar-link"><span class="hide-menu">Birth List
+                                        </span></a>
+                                </li>
+                                
+                                
+                            </ul>
+                        </li>
+                        <li class="sidebar-item selected"> <a class="sidebar-link has-arrow active" href="javascript:void(0)" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text feather-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><span class="hide-menu">Death Cerificate </span></a>
+                            <ul aria-expanded="false" class="collapse first-level base-level-line in">
+
+                                <li class="sidebar-item active"><a href="deathmanual.php" class="sidebar-link active"><span class="hide-menu">Death Application
+                                        </span></a>
+                                </li>
+                                
+                                <li class="sidebar-item"><a href="deathmanuallist.php" class="sidebar-link"><span class="hide-menu">Death List
+                                        </span></a>
+                                </li>
+                                 
+                                
+                            </ul>
+                        </li>
+                     
+                       
+                      <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text feather-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><span class="hide-menu">Birth Hospital Add </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+
+                                <li class="sidebar-item"><a href="birthform.php" class="sidebar-link"><span class="hide-menu"> Add Hospital
+                                        </span></a>
+                                </li>
+                                                                
+                                
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text feather-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><span class="hide-menu">Death Hospital Add </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+
+                                <li class="sidebar-item"><a href="deathform.php" class="sidebar-link"><span class="hide-menu"> Add Hospital
+                                        </span></a>
+                                </li>
+                                                                
+                            </ul>
+                        </li>
+                        
+                        
+             
+                       <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text feather-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><span class="hide-menu">AADHAR CARD </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+
+                                <li class="sidebar-item"><a href="aadharmanual.php" class="sidebar-link"><span class="hide-menu">Aadhar Manual
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="aadharmanuallist.php" class="sidebar-link"><span class="hide-menu">Aadhar Manual List
+                                        </span></a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text feather-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><span class="hide-menu">PAN CARD </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+
+                                <li class="sidebar-item"><a href="panmanual.php" class="sidebar-link"><span class="hide-menu">PAN Application
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="panmanuallist.php" class="sidebar-link"><span class="hide-menu">PAN List
+                                        </span></a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                 
+        
+                       
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu"> Website </span></li>
+
+<li class="sidebar-item"> <a class="sidebar-link" href="news.php" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag feather-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="hide-menu">View News
+        </span></a>
+</li>
+                        
+                                                
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Profile</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="viewprofile.php" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user feather-icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span class="hide-menu">View Profile</span></a></li>
+                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="editprofile.php" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3 feather-icon"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span class="hide-menu">Edit Profile</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="logout.php" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out feather-icon"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg><span class="hide-menu">Logout</span></a></li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 577px; right: 3px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 320px;"></div></div></div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== --><link rel="stylesheet" href="datepicker/dist/mc-calendar.min.css">
+<script src="datepicker/dist/mc-calendar.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+<div class="page-wrapper" style="display: block;">
+
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-7 align-self-center">
+                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Welcome Rahul ray!</h3>
+                <div class="d-flex align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0 p-0">
+                            <li class="breadcrumb-item"><a href="index.html">OPERATOR</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-5 align-self-center">
+                <div class="customize-input float-right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                
+<div class="card mx-auto">
+<div class="card-body">
+<h4 class="card-title">Death certificate Manual</h4> 
+
+<form method="post" class="row g-3">
+<div class="form-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+    <label for="fullname">मृतक का नाम / NAME OF DECEASED</label>
+    <input type="text" class="form-control" id="fullname" placeholder="Enter Full Name" name="name" style="text-transform:uppercase">
+  </div>
+</div>
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="ano" class="form-label">आधार नंबर / Aadhar Number </label>
+    <input type="text" class="form-control" id="ano" placeholder="Aadhar Number" name="aadhar">
+  </div>
+</div>
+<div class="col-md-4">
+                                                <div class="form-group">
+    <label for="gender" class="form-label">लिंग / Gender</label>
+    <select class="form-control" aria-label=".form-select-lg example" name="gender">
+  <option selected="">Select Gender</option>
+  <option value="MALE">पुरुष / MALE</option>
+  <option value="FEMALE">महिला / FEMALE</option>
+  <option value="TRANSGENDER"> ट्रांसजेंडर / TRANSGENDER</option>
+  
+</select>
+  </div>
+</div>
+<div class="col-md-4">
+                                                <div class="form-group">
+    <label for="dob" class="form-label">मृत्यु की तिथि / DATE OF DEATH</label>
+    <input class="form-control datepicker" id="dob" name="dob" data-date="12-02-2012" data-date-format="dd-mm-yyyy" placeholder="12-03-2020">
+  </div>
+</div>
+
+
+<div class="col-md-4">
+                                                <div class="form-group">
+    <label for="dob" class="form-label">मृतक की उम्र  / AGE OF DECEASED</label>
+    <input class="form-control datepicker" id="age" name="age" placeholder="XX Years">
+  </div>
+</div>
+
+
+
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="dob" class="form-label"> मृत्यु की तिथि / DATE OF DEATH ( IN WORDS )</label>
+    <input class="form-control datepicker" id="dob" name="dobwords" placeholder="FIFTEENTH-JULY-TWO THOUSAND ELEVEN" style="text-transform:uppercase">
+  </div>
+</div>
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="placeofbirth" class="form-label">मृत्यु का स्थान / PLACE OF DEATH/</label>
+    <input type="text" class="form-control" id="placeofbirth" name="pob" placeholder="Place of Birth" style="text-transform:uppercase">
+  </div>
+</div>
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="fname" class="form-label">पिता का नाम / Father Name</label>
+    <input type="text" class="form-control" id="fname" name="fname" placeholder="Father's name" style="text-transform:uppercase">
+  </div>
+</div>
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="faadhar" class="form-label">पिता का आधार / Father Aadhar</label>
+    <input type="text" class="form-control" id="faadhar" name="faadhar" placeholder="Father's Aadhar" style="text-transform:uppercase">
+  </div>
+</div>
+
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="fname" class="form-label">पति / पत्नी का नाम / Name of Husband / Wife</label>
+    <input type="text" class="form-control" id="hwname" name="hwname" placeholder="Husband/Wife's name" style="text-transform:uppercase">
+  </div>
+</div>
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="faadhar" class="form-label">पति / पत्नी का आधार नंबर  / Husband/Wife's Aadhar</label>
+    <input type="text" class="form-control" id="hwaadhar" name="hwaadhar" placeholder="Father's Aadhar" style="text-transform:uppercase">
+  </div>
+</div>
+
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="mname" class="form-label">माता का नाम / Mother Name</label>
+    <input type="text" class="form-control" id="mname" name="mname" placeholder="Mother's Name" style="text-transform:uppercase">
+  </div>
+</div>
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="maadhar" class="form-label">माता का नाम / Mother Aadhar</label>
+    <input type="text" class="form-control" id="maadhar" name="maadhar" placeholder="Mother's aadhar" style="text-transform:uppercase">
+  </div>
+</div>
+<div class="col-md-12">
+                                                <div class="form-group">
+    <label for="padd" class="form-label"> मृतक का स्थायी पता /Permanent Address of the deceased</label>
+    <input type="text" class="form-control" id="padd" placeholder="Permanent Address" name="padd" style="text-transform:uppercase">
+  </div>
+</div>
+<div class="col-md-12">
+                                                <div class="form-group">
+    <label for="tadd" class="form-label">मृत्यु के समय मृतक का पता / Address of the deceased at time of Death</label>
+    <input type="text" class="form-control" id="tadd" placeholder="Address of Birth" name="tadd" style="text-transform:uppercase">
+  </div>
+</div>
+
+<div class="col-md-6">
+                                                <div class="form-group">
+    <label for="dor" class="form-label">पंजीकरण की तिथि / Date of Registration</label>
+    <input class="form-control" id="dor" name="dor" data-id="datetime">
+  </div>
+</div>
+<div class="col-md-6">
+    
+                                    <div class="form-group">
+ <label for="dor" class="form-label">Select State</label>
+                            <select id="state" class="form-control" name="state" required="">
+                                <option>Select State</option>
+                                <option value="Andhra Pradesh"> Andhra Pradesh </option>
+                                <option value="Arunachal Pradesh"> Arunachal Pradesh </option>
+                                <option value="Assam"> Assam </option>
+                                <option value="Bihar"> Bihar </option>
+                                <option value="Chandigarh"> Chandigarh </option>
+                                <option value="Chhattisgarh"> Chhattisgarh </option>
+                                <option value="Delhi"> Delhi </option>
+                                <option value="Gujarat"> Gujarat </option>
+                                <option value="Haryana"> Haryana </option>
+                                <option value="Himachal Pradesh"> Himachal Pradesh </option>
+                                <option value="Jammu and Kashmir"> Jammu and Kashmir </option>
+                                <option value="Jharkhand"> Jharkhand </option>
+                                <option value="Karnataka"> Karnataka </option>
+                                <option value="Kerala"> Kerala </option>
+                                <option value="Madhya Pradesh"> Madhya Pradesh </option>
+                                <option value="Maharashtra"> Maharashtra </option>
+                                <option value="Manipur"> Manipur </option>
+                                <option value="Meghalaya"> Meghalaya </option>
+                                <option value="Orissa"> Orissa </option>
+                                <option value="Puducherry"> Puducherry </option>
+                                <option value="Punjab"> Punjab </option>
+                                <option value="Rajasthan"> Rajasthan </option>
+                                <option value="Tamil Nadu"> Tamil Nadu </option>
+                                <option value="Telangana"> Telangana </option>
+                                <option value="Tripura"> Tripura </option>
+                                <option value="Uttar Pradesh"> Uttar Pradesh </option>
+                                <option value="Uttarakhand"> Uttarakhand </option>
+                                <option value="West Bengal "> West Bengal </option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+
+<div class="col-md-12">
+                                                <div class="form-group">
+    <label for="dor" class="form-label">Hospital</label>
+    <select class="form-control" name="nhospital" id="selectBox" required=""><option value="CHAMPARAN (West) - COMMUNITY HEALTH CENTRE GAWNAHA">CHAMPARAN (West) - COMMUNITY HEALTH CENTRE GAWNAHA</option><option value="CHAMPARAN (West) - COMMUNITY HEALTH CENTRE GAWNAHA (With Signature)">CHAMPARAN (West) - COMMUNITY HEALTH CENTRE GAWNAHA (With Signature)</option><option value="DARBHANGA - GRAMA PANCHAYAT LOAM(WITHOUT SIGN)">DARBHANGA - GRAMA PANCHAYAT LOAM(WITHOUT SIGN)</option><option value="SONEPUR CORPORATION(WITHOUT SIGN)">DARBHANGA - MUNICIPAL CORPORATION(WITHOUT SIGN)</option><option value="JAMUI - GRAMA PANCHAYAT KAITHA">JAMUI - GRAMA PANCHAYAT KAITHA</option><option value="KATIHAR - GRAMA PANCHAYAT HARNAROI">KATIHAR - GRAMA PANCHAYAT HARNAROI</option><option value="KHAGARIA - GRAMA PANCHAYAT MAHINATH NAGAR">KHAGARIA - GRAMA PANCHAYAT MAHINATH NAGAR</option><option value="KHAGARIA - GRAMA PANCHAYAT MALLI">KHAGARIA - GRAMA PANCHAYAT MALLI</option><option value="KISHANGANJ - PRIMARY HEALTH CENTRE KISHANGANJ">KISHANGANJ - PRIMARY HEALTH CENTRE KISHANGANJ</option><option value="MADHUBANI - GRAMA PANCHAYAT DAMU">MADHUBANI - GRAMA PANCHAYAT DAMU</option><option value="MADHUBANI - PRIMARY HEALTH CENTRE BASOPATTI (Without Sign)">MADHUBANI - PRIMARY HEALTH CENTRE BASOPATTI (Without Sign)</option><option value="PASHCHIM CHAMPARAN - GRAM PANCHAYAT SAKRAUL(WITHOUT SIGN)">PASHCHIM CHAMPARAN - GRAM PANCHAYAT SAKRAUL(WITHOUT SIGN)</option><option value="PASHCHIM CHAMPARAN - GRAMPANCHAYAT BARWADIH(WITHOUT SIGN)">PASHCHIM CHAMPARAN - GRAMPANCHAYAT BARWADIH(WITHOUT SIGN)</option><option value="PRIMARY  HEALTH  CENTER  BAISI">PRIMARY  HEALTH  CENTER  BAISI</option><option value="PRIMARY HEALTH CENTRE UDAKISHUNGANJ">PRIMARY HEALTH CENTRE UDAKISHUNGANJ</option><option value="PURNIA - GRAMA PANCHAYAT BUWARI">PURNIA - GRAMA PANCHAYAT BUWARI</option><option value="PURNIA - GRAMA PANCHAYAT RANGPURA SOUTH">PURNIA - GRAMA PANCHAYAT RANGPURA SOUTH</option><option value="PURNIA - SADAR HOSPITAL PURNIA">PURNIA - SADAR HOSPITAL PURNIA</option><option value="ROHTAS - GRAMA PANCHAYAT ROTWAN">ROHTAS - GRAMA PANCHAYAT ROTWAN</option><option value="Sadar Hospital Araria">Sadar Hospital Araria</option><option value="SADAR HOSPITAL DARBHANGA">SADAR HOSPITAL DARBHANGA</option><option value="SADAR HOSPITAL GOPALGANJ">SADAR HOSPITAL GOPALGANJ</option><option value="SADAR HOSPITAL KATIHAR">SADAR HOSPITAL KATIHAR</option><option value="Sadar Hospital Khagadia">Sadar Hospital Khagadia</option><option value="SADAR HOSPITAL MADHUBANI">SADAR HOSPITAL MADHUBANI</option><option value="SADAR HOSPITAL MUNGER">SADAR HOSPITAL MUNGER</option><option value="sadar hospital patna">sadar hospital patna</option><option value="SAHARSA - SADAR HOSPITAL SAHARSA">SAHARSA - SADAR HOSPITAL SAHARSA</option><option value="SARAN - GRAMA PANCHAYAT BANPURA ">SARAN - GRAMA PANCHAYAT BANPURA </option><option value="SIWAN - GRAMA PANCHAYAT KOERIGAWAN">SIWAN - GRAMA PANCHAYAT KOERIGAWAN</option><option value="SIWAN - SADAR HOSPITAL SIWAN">SIWAN - SADAR HOSPITAL SIWAN</option><option value="SUPAUL - GRAMA PANCHAYAT JADIA">SUPAUL - GRAMA PANCHAYAT JADIA</option><option value="SUPAUL - SADAR HOSPITAL SUPAUL">SUPAUL - SADAR HOSPITAL SUPAUL</option><option value="SUPAUL - SUB DIVISIONAL HOSPITAL, TRIVENIGANJ">SUPAUL - SUB DIVISIONAL HOSPITAL, TRIVENIGANJ</option></select>
+  </div>
+</div>
+<script>
+$( "#state" ).change(function () {
+    var stateID = $(this).val();
+
+
+    if(stateID) {
+
+
+        $.ajax({
+            url: "dt/deathhos.php",
+            dataType: 'Json',
+            data: {'sname':stateID},
+            success: function(data) {
+                $('select[name="nhospital"]').empty();
+                $.each(data, function(key, value) {
+                    $('select[name="nhospital"]').append('<option value="'+ key +'">'+ value +'</option>');
+                });
+            }
+        });
+
+
+    }else{
+        $('select[name="nhospital"]').empty();
+    }
+});
+</script>
+ 
+
+  <div class="col-12">
+          <a href="wallet.php" class="btn btn-danger"> Your Wallet Balance is Low, Recharge Now </a>
+        
+  </div>
+
+</div>
+</div></form>
+</div>
+</div>
+<script>
+  const myDatePicker = MCDatepicker.create({ 
+      el: '#dor',
+      dateFormat: 'dd-mm-YYYY',
+})
+const dobp = MCDatepicker.create({ 
+      el: '#dob',
+      dateFormat: 'dd-mm-YYYY',
+})
+</script>
+
+   <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center text-muted">
+               
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- apps -->
+    <!-- apps -->
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <script src="../dist/js/feather.min.js"></script>
+    <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <script src="../assets/extra-libs/c3/d3.min.js"></script>
+    <script src="../assets/extra-libs/c3/c3.min.js"></script>
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="../assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.min.js"></script>
+
+
+</div></div></div><div class="mc-calendar" tabindex="0"><div class="mc-display" data-target="calendar">
+<div class="mc-display__header">
+<h3 class="mc-display__day">Thursday</h3>
+</div>
+<div class="mc-display__body">
+<div class="mc-display__data mc-display__data--primary">
+<h1 class="mc-display__date">1</h1>
+</div>
+<div class="mc-display__data mc-display__data--secondary">
+<h3 class="mc-display__month">January</h3>
+<h2 class="mc-display__year">1970</h2>
+</div>
+</div>
+</div>
+<div class="mc-picker">
+<div class="mc-picker__header mc-select mc-container" data-target="calendar">
+<div class="mc-select__month">
+<button id="mc-picker__month--prev" class="mc-select__nav mc-select__nav--prev" tabindex="0" aria-label="Previous Month">
+<svg class="icon-angle icon-angle--left" viewBox="0 0 256 512" width="10px" height="100%">
+<path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path>
+</svg>
+</button>
+<div id="mc-current--month" class="mc-select__data mc-select__data--month" tabindex="0" aria-label="Click to select month" aria-haspopup="true" aria-expanded="false" aria-controls="mc-month-year__preview">
+<span>January</span>
+</div>
+<button id="mc-picker__month--next" class="mc-select__nav mc-select__nav--next" tabindex="0" aria-label="Next Month">
+<svg class="icon-angle icon-angle--right" viewBox="0 0 256 512" width="10px" height="100%">
+<path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+</svg>
+</button>
+</div>
+<div class="mc-select__year">
+<button id="mc-picker__year--prev" class="mc-select__nav mc-select__nav--prev">
+<svg class="icon-angle icon-angle--left" viewBox="0 0 256 512" width="10px" height="100%">
+<path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path>
+</svg>
+</button>
+<div id="mc-current--year" class="mc-select__data mc-select__data--year" tabindex="0" aria-label="Click to select year" aria-haspopup="true" aria-expanded="false" aria-controls="mc-month-year__preview">
+<span>1970</span>
+</div>
+<button id="mc-picker__year--next" class="mc-select__nav mc-select__nav--next">
+<svg class="icon-angle icon-angle--right" viewBox="0 0 256 512" width="10px" height="100%">
+<path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+</svg>
+</button>
+</div>
+<div id="mc-picker__month-year" class="mc-picker-vhidden" aria-live="polite" aria-atomic="true">January 1970</div>
+</div>
+<div class="mc-picker__body">
+<table class="mc-table mc-container" aria-labelledby="mc-picker__month-year">
+<thead class="mc-table__header">
+<tr>
+<th class="mc-table__weekday">S</th>
+<th class="mc-table__weekday">M</th>
+<th class="mc-table__weekday">T</th>
+<th class="mc-table__weekday">W</th>
+<th class="mc-table__weekday">T</th>
+<th class="mc-table__weekday">F</th>
+<th class="mc-table__weekday">S</th>
+</tr>
+</thead>
+<tbody class="mc-table__body">
+<tr class="mc-table__week">
+<td class="mc-date mc-date--inactive" data-val-date="">28</td>
+<td class="mc-date mc-date--inactive" data-val-date="">29</td>
+<td class="mc-date mc-date--inactive" data-val-date="">30</td>
+<td class="mc-date mc-date--inactive" data-val-date="">31</td>
+<td class="mc-date mc-date--active" data-val-date="">1</td>
+<td class="mc-date mc-date--active" data-val-date="">2</td>
+<td class="mc-date mc-date--active" data-val-date="">3</td>
+</tr>
+<tr class="mc-table__week">
+<td class="mc-date mc-date--active" data-val-date="">4</td>
+<td class="mc-date mc-date--active" data-val-date="">5</td>
+<td class="mc-date mc-date--active" data-val-date="">6</td>
+<td class="mc-date mc-date--active" data-val-date="">7</td>
+<td class="mc-date mc-date--active" data-val-date="">8</td>
+<td class="mc-date mc-date--active" data-val-date="">9</td>
+<td class="mc-date mc-date--active" data-val-date="">10</td>
+</tr>
+<tr class="mc-table__week">
+<td class="mc-date mc-date--active" data-val-date="">11</td>
+<td class="mc-date mc-date--active" data-val-date="">12</td>
+<td class="mc-date mc-date--active" data-val-date="">13</td>
+<td class="mc-date mc-date--active" data-val-date="">14</td>
+<td class="mc-date mc-date--active" data-val-date="">15</td>
+<td class="mc-date mc-date--active" data-val-date="">16</td>
+<td class="mc-date mc-date--active" data-val-date="">17</td>
+</tr>
+<tr class="mc-table__week">
+<td class="mc-date mc-date--active" data-val-date="">18</td>
+<td class="mc-date mc-date--active" data-val-date="">19</td>
+<td class="mc-date mc-date--active" data-val-date="">20</td>
+<td class="mc-date mc-date--active" data-val-date="">21</td>
+<td class="mc-date mc-date--active" data-val-date="">22</td>
+<td class="mc-date mc-date--active" data-val-date="">23</td>
+<td class="mc-date mc-date--active" data-val-date="">24</td>
+</tr>
+<tr class="mc-table__week">
+<td class="mc-date mc-date--active" data-val-date="">25</td>
+<td class="mc-date mc-date--active" data-val-date="">26</td>
+<td class="mc-date mc-date--active" data-val-date="">27</td>
+<td class="mc-date mc-date--active" data-val-date="">28</td>
+<td class="mc-date mc-date--active" data-val-date="">29</td>
+<td class="mc-date mc-date--active" data-val-date="">30</td>
+<td class="mc-date mc-date--active" data-val-date="">31</td>
+</tr>
+<tr class="mc-table__week">
+<td class="mc-date mc-date--inactive" data-val-date="">1</td>
+<td class="mc-date mc-date--inactive" data-val-date="">2</td>
+<td class="mc-date mc-date--inactive" data-val-date="">3</td>
+<td class="mc-date mc-date--inactive" data-val-date="">4</td>
+<td class="mc-date mc-date--inactive" data-val-date="">5</td>
+<td class="mc-date mc-date--inactive" data-val-date="">6</td>
+<td class="mc-date mc-date--inactive" data-val-date="">7</td>
+</tr>
+</tbody>
+</table>
+<div id="mc-month-year__preview" class="mc-month-year__preview" data-target="null" role="menu">
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+<div class="mc-month-year__cell"></div>
+</div>
+</div>
+<div class="mc-picker__footer mc-container">
+<div class="mc-footer__section mc-footer__section--primary">
+<button id="mc-btn__clear" class="mc-btn mc-btn--danger" tabindex="0">Clear</button>
+</div>
+<div class="mc-footer__section mc-footer__section--secondary">
+<button id="mc-btn__cancel" class="mc-btn mc-btn--success" tabindex="0">CANCEL</button>
+<button id="mc-btn__ok" class="mc-btn mc-btn--success" tabindex="0">OK</button>
+</div>
+</div>
+</div></div><div class="jvectormap-tip"></div></body></html>
